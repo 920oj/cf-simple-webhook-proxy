@@ -10,6 +10,7 @@ export default {
 		const responseHeaders = new Headers({
 			'Access-Control-Allow-Origin': env.ORIGIN_HOST !== '' ? env.ORIGIN_HOST : '*',
 			'Access-Control-Allow-Methods': 'POST, OPTIONS',
+			'Access-Control-Allow-Headers': '*',
 			'Access-Control-Max-Age': '86400',
 		});
 
