@@ -1,0 +1,7 @@
+name = "REPLACE_YOUR_APP_NAME"
+main = "src/index.ts"
+compatibility_date = "2023-12-18"
+
+[vars]
+ORIGIN_HOST = "REPLACE_YOUR_ORIGIN_HOST_URL" # If you do not need to specify the origin, replace with "".
+WEBHOOK_URL = "REPLACE_YOUR_WEBHOOK_URL"
