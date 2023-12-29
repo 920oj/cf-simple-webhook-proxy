@@ -26,7 +26,7 @@ export default {
 						},
 					};
 					const response = await fetch(env.WEBHOOK_URL, init);
-					const result = JSON.stringify(await response.json());
+					const result = await response.text();
 					return new Response(result, { status: response.status, headers: responseHeaders });
 				} catch (e) {
 					return new Response('someting error occuered', { status: 500, headers: responseHeaders });
